@@ -1,0 +1,303 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro&display=swap');
+*{  
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+    font-family: 'Be Vietnam Pro', sans-serif;
+}
+body{
+    width:100%;
+
+    margin:0 auto;
+}
+/* header */
+header{
+    float:left;
+    width: 100%;
+    border-bottom: 2px solid rgb(224, 9, 9);
+}
+
+header img{
+    float:left;
+    margin-left: 5em;
+}
+
+/* header nav_menu */
+#nav_menu{
+
+    margin-top: 3em;
+}
+
+#nav_menu ul{
+    list-style: none;
+}
+
+/* first ul */
+#nav_menu ul.main-nav> li{
+    float:left;
+    position: relative;
+    border-right:1px solid black;
+    vertical-align: middle;
+}
+#nav_menu ul.main-nav li a{
+    padding:0.5em ;
+    width:10em;
+    height: 3em;
+    text-align: center;
+    display: block;
+    color:#000;
+    text-decoration: none;
+}
+#nav_menu ul li a:hover{
+    color:red;
+    transition: 1s ease;
+    background-color: rgb(247, 216, 216);
+}
+
+/* second ul*/
+#nav_menu ul ul{
+    display:none;
+    position:absolute;
+    top:100%;
+    margin:0;
+}
+#nav_menu ul li:hover>ul{
+    display: block;
+}
+#nav_menu > ul::after{
+    content:"";
+    display: block;
+    clear:both;
+}
+#nav_menu ul ul li{
+    float:none;
+    position: relative;
+    
+}
+/* third ul */
+#nav_menu ul ul li ul{
+    position: absolute;
+    top:0;
+    left:100%;
+}
+#nav_menu ul ul li a{
+    display: block;
+    width:250px;
+    border-bottom: 1px solid rgb(224, 9, 9);
+    background-color: rgba(255, 254, 254, 0.918);
+    padding:1em 1em;
+}
+/* main */
+
+
+/* dao-tao form */
+div.dao-tao{
+    overflow: auto;
+    width:100%;
+    background-color:#e03e3e;
+    padding:2em 0;
+    margin-top:2em;
+
+}
+/* section left */
+section.left{
+    float:left;
+    margin:0 5vw;
+}
+section.left form{
+    width: 15em;
+    border:1px dashed #000;
+    border-radius: 5px;
+
+}
+/* title for both section */
+.dangky{
+    text-align: center;
+    border-bottom: 1px dashed rgba(124, 124, 124, 0.856);
+    margin: 0.5em 1em;
+}
+.dangky h1{
+    margin-bottom: .5em;
+    color:#fff;
+}
+/* input */
+section.left input, select{
+    height:30px;
+}
+
+section.left input,  section.left textarea,
+section.left select{
+    display:block;
+    width: 180px;
+    margin: 0.5em auto;
+    padding:0.5em;
+    background-color: rgb(224, 212, 214);
+}
+section.left input[type="submit"]
+{
+    background-color: darkorange;
+    border:0;
+    width:180px;
+}
+section.left input[type="submit"]:hover{
+    cursor: pointer;
+    background-color: rgb(250, 157, 44);
+}
+/* section right*/
+section.right {
+    float:left;
+    width: 65%;
+}
+section.right .wrapper{
+    overflow: auto;
+    width: 100%;
+    border:1px dashed #000;
+    border-radius: 5px;
+    text-align: center;
+    padding: .5em 1em 2.3em;
+}
+
+/* section right list ul*/
+section.right ul{
+    list-style: none;
+    
+}
+section.right ul li{
+    float:left;
+    margin: 0 2em;
+    text-align: center;
+    
+}
+section.right .lua-chon ul li img{
+    border-radius: 50%;
+    border:1px dashed rgb(80, 77, 77);
+    padding:3px;
+}
+section.right .lua-chon ul li{
+    width:9.5em;
+}
+section.right .lua-chon ul li a{
+    text-decoration: none;
+    cursor: pointer;
+    color:#fff;
+    line-height: 1.5em;
+}
+section.right .lua-chon ul li a:hover{
+    color:#000;
+}
+/* article */
+article{
+    clear:both;
+    width: 100%;
+    margin-top:2em;
+}
+
+article table{
+    width:80%;
+    margin:0 auto;
+}
+
+article table tr td img.round-image{
+    border-radius: 50%;
+    border:1px solid #000;
+}
+article table tr td{
+    width:30%;
+    vertical-align: middle;
+    text-align: center;
+}
+/* modify second table td*/
+
+article table tr td#iviettech-description{
+    text-align: left;
+    
+}
+article table tr td#iviettech-description h1,
+article table tr td#iviettech-description p{
+    padding-bottom: .5em;
+    
+}
+
+article table tr td#iviettech-description button{
+    background-color: rgb(235, 116, 18);
+    padding:0.5em;
+    border:none;
+    
+}
+article table tr td#iviettech-description button[type="button"]:hover{
+    cursor: pointer;
+    background-color: rgb(250, 157, 44);
+}
+
+
+/* lich khai giang */
+.class-cal{
+    width: 100%;
+    margin-top:2em;
+    padding:3em 0;  
+    background-color: #e03e3e;
+    overflow: auto;
+    color:#fff;
+}
+.class-cal .cal-title{
+    margin:0.5em 1em;
+    text-align: center;
+    border-bottom: 1px dashed rgba(124, 124, 124, 0.856);
+}
+.class-cal ul{
+    list-style: none;
+}
+.class-cal  a{
+    color:#fff;
+    text-decoration: none;
+}
+.class-cal  a:hover{
+    color:#fff;
+    text-decoration: underline;
+}
+.khai-giang{
+    float:left;
+    width: 50vw;
+    margin:0 5vw 0 10vw;
+}
+.khoa-khac{
+    float:left;
+    border: 1px dashed #fff;
+
+}
+
+/* modify khai giang list ul */
+
+.khai-giang ul li {
+
+    margin-bottom: 1em;
+    width: 100%;
+}
+.khai-giang ul li img{
+    float: left;
+    margin-right:1%;
+    border-radius:5px;
+}
+
+.khai-giang ul#u1{   
+    float: left;
+    width:25vw;   
+}
+.khai-giang ul#u2 {
+    float: left;
+    width: 25vw;
+}
+
+/* khoa khac */
+.khoa-khac ul{
+    padding:0 2em ;
+}
+.khoa-khac table td img{
+    margin-right: 10px;
+}
+.khoa-khac table {
+    margin:1em 0;
+}
+.khoa-khac table td{
+    font-size: 16px;
+}
